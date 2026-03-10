@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXPENSE TRACKER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>MY EXPENSE TRACKER</h1>
+        <h3>Track your spending with ease</h3>
+    </header>
+    <main>
+        <div class="container1">
+            <div class="balance">
+                <h2>Your Balance</h2>
+                <h1 id="balance">$0.00</h1>
+            </div>
+            <div class="add">
+                <h2>Add New Transaction</h2>
+                <form id="transaction-form">
+                    <input type="text" id="description" placeholder="Description" required>
+                    <input type="number" id="amount" placeholder="Amount (negative for expenses)" required>
+                    <input type="date" id="date" required>
+                    <button type="submit">Add Transaction</button>
+                </form>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="card">
+                <h2>Total Spending</h2>
+                <h1 id="total-spending">$0.00</h1>
+            </div>
+            <div class="card">
+                <h2>Highest Spent Category</h2>
+                <h1 id="highest-category">$0.00</h1>
+            </div>
+            <div class="card">
+                <h2>Current month expenses</h2>
+                <h1 id="current-month">$0.00</h1>
+            </div>
+        </div>
+        <div class="container3">
+            <div class="category">
+                <h2>Spending by Category</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody id="category-table-body">
+                        <tr>
+                            <td>Food</td>
+                            <td>$0.00</td>
+                        </tr>
+                        <tr>
+                            <td>Transportation</td>
+                            <td>$0.00</td>
+                        </tr>
+                        <tr>
+                            <td>Entertainment</td>
+                            <td>$0.00</td>
+                        </tr>
+                        <tr>
+                            <td>Utilities</td>
+                            <td>$0.00</td>
+                        </tr>
+                        <tr>
+                            <td>Shopping</td>
+                            <td>$0.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="rec-trans">
+                <h2>Recent Transactions</h2>
+                <div class="trans">
+                    <h3>Transaction 1</h3>
+                    <p>Description: Groceries</p>
+                    <p>Amount: $50.00</p>
+                </div>
+                <div class="trans">
+                    <h3>Transaction 2</h3>
+                    <p>Description: Movie Tickets</p>
+                    <p>Amount: $30.00</p>
+                </div>
+                <div class="trans">
+                    <h3>Transaction 3</h3>
+                    <p>Description: Gas</p>
+                    <p>Amount: $40.00</p>
+                </div>
+                <div class="trans">
+                    <h3>Transaction 4</h3>
+                    <p>Description: Electricity Bill</p>
+                    <p>Amount: $60.00</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
